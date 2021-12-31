@@ -1,0 +1,57 @@
+    "vim.normalModeKeyBindingsNonRecursive": [
+        
+        // tabs
+        {
+            "before": ["<tab>"],
+            "commands": ["workbench.action.nextEditor"]
+        },
+        {
+            "before": ["<S-tab>"],
+            "commands": ["workbench.action.previousEditor"]
+        },
+        // sideBar (needtree)
+        {
+            "before": ["<leader>","<leader>","t"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before": ["<leader>","t"],
+            "commands": ["workbench.action.focusSideBar"]
+        },
+        // moving 
+        {
+            "before": ["<leader>","l"],
+            "after": ["$"]
+        },
+        {
+            "before": ["<leader>","h"],
+            "after": ["_"]
+        },
+        // save file
+        {
+            "before": ["<leader>", "s"],
+            "commands": ["workbench.action.files.save"]
+        },
+        // switch focus group
+        {
+            "before": ["<leader>","<leader>", "l"],
+            "commands": ["workbench.action.focusRightGroup"],
+        },
+        {
+            "before": ["<leader>","<leader>", "h"],
+            "commands": ["workbench.action.focusLeftGroup"],
+        },
+        //split editor
+        {
+            "before": ["<leader>","<leader>", "s"],
+            "commands": ["workbench.action.splitEditor"]
+        },
+        // close editor
+        {
+            "before": ["<leader>","<leader>", "c"],
+            "commands": ["workbench.action.closeActiveEditor"]
+        }
+    ],
+    "vim.leader": "<space>",
+
+    "editor.lineNumbers": "relative",
